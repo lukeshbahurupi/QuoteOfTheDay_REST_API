@@ -30,14 +30,14 @@ namespace QuoteOfTheDay_REST_API.Controllers
 
         }
 
-        public HttpResponseMessage Get(string name)
+        public HttpResponseMessage Get(string author)
         {
             using (Quotes_DBContext db = new Quotes_DBContext())
             {
-                if(name != null)
+                if(author != null)
                 {
-                    var model = db.QuoteLists.FirstOrDefault(el => el.AuthorName.ToLower() == name.ToLower());
-                    return model!=null? Request.CreateResponse(HttpStatusCode.OK, model) : Request.CreateResponse(HttpStatusCode.NotFound, "Can Not Fount Auther Name : " + name);
+                    var model = db.QuoteLists.FirstOrDefault(el => el.AuthorName.ToLower() == author.ToLower());
+                    return model!=null? Request.CreateResponse(HttpStatusCode.OK, model) : Request.CreateResponse(HttpStatusCode.NotFound, "Can Not Fount Auther Name : " + author);
                 }
                 else
                 {
