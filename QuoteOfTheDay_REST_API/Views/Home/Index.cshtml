@@ -1,26 +1,85 @@
-﻿<main>
-    <section class="row" aria-labelledby="aspnetTitle">
-        <h1 id="aspnetTitle">ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
-    </section>
-    <div class="row">
-        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-            <h2 id="gettingStartedTitle">Getting started</h2>
-            <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach
-            a broad range of clients, including browsers and mobile devices. ASP.NET Web API
-            is an ideal platform for building RESTful applications on the .NET Framework.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301870">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="librariesTitle">
-            <h2 id="librariesTitle">Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301871">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="hostingTitle">
-            <h2 id="hostingTitle">Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
-        </section>>
-    </div>
-</main>
+﻿<h1>Backend Week 1 Task - Quote of the Day REST API</h1>
+
+<p>
+    This repository contains the solution for the **Back End Week 1 Task**, which involves building a REST API for providing users with a daily "Quote of the Day" message. Below are the details of the task:
+</p>
+<h3>Task Description</h3>
+
+<p>
+    Develop an API system that allows users to access a random "Quote of the Day." The API should provide the following functionalities:<br />
+
+    - <b>Get a Random Quote</b>: Users can request a random quote.<br />
+    - <b>Add a New Quote</b>: Users can add new quotes to the database<br />
+    - <b>Update a Quote</b>: Users can edit and update existing quotes.<br />
+    - <b>Delete a Quote</b>: Users can remove a quote from the database.<br />
+    - <b>Search by Author (Optional)</b>: Users can search for quotes by the name of the author (optional feature).<br />
+</p>
+<h3>Technologies Used</h3>
+<p>
+    - <b>Programming Language</b>: C#<br />
+    - <b>Framework</b>: ASP.NET MVC<br />
+    - <b>Database</b>: MS-SQL<br />
+</p>
+<h3>Project Structure</h3>
+
+The project is organized as follows:
+<br />
+
+- <b>Controllers</b>: Contains the API endpoints for retrieving, adding, updating, and deleting quotes.
+<br />
+- <b>Models</b>: Defines the data models used within the application.
+<br />
+- <b>Views</b>: In an API project, views are not used as in traditional MVC applications. Instead, this directory may contain documentation or Swagger UI for API testing.
+<br />
+- <b>Services</b>: Contains the business logic for managing quotes and interacting with the database.
+<br />
+- <b>Repositories</b>: Manages the data access to the database.
+<br />
+- <b>App_Start</b>: Configuration files and settings.
+<br />
+- <b>Scripts</b>: Front-end scripts (if applicable).
+<br />
+- <b>Styles</b>: CSS files (if applicable).
+<br />
+
+<h3>Getting Started</h3>
+
+Follow these steps to set up and run the project:
+<br />
+
+1. <b>Clone the Repository</b>: Use the `git clone` command to clone this repository to your local machine.
+<br />
+
+2. <b>Database Setup</b>: Create the database and configure the connection string in the `web.config` or an environment-specific configuration file.
+<br />
+
+3. <b>Build and Run</b>: Build the project and start the application.
+<br />
+
+4. <b>API Endpoints</b>: Access the API endpoints to interact with the Quote of the Day system.
+<br />
+
+<h3>API Endpoints</h3>
+
+- `GET /api/quote`: Get a random quote of the day.
+<br />
+- `POST /api/quote`: Add a new quote.
+<br />
+- `PUT /api/quote/{id}`: Update an existing quote.
+<br />
+- `DELETE /api/quote/{id}`: Delete a quote by its ID.
+<br />
+- `GET /api/quote?author={authorName}` (Optional): Search for quotes by the author's name.
+<br />
+
+<h3>Contributors</h3> 
+<p>
+    - Lukesh Bahurupi
+    <br />
+
+    Feel free to contribute to this project by creating pull requests and improving the features or documentation.
+
+    Thank you for your interest in the Back End Week 1 Task - Quote of the Day REST API project. If you have any questions or need further information, please don't hesitate to reach out.
+
+    Happy coding! 🚀
+</p>
